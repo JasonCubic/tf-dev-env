@@ -1,0 +1,3 @@
+tenant_id = "<tennant goes here>"
+subscription_id = "<subscription goes here>"
+host_os = "windows"
