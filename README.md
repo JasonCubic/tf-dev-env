@@ -66,6 +66,15 @@ az vm list-skus --location eastus --size Standard_B1s --all --output table
 
 ---
 
+## how the ssh keypair was made
+
+1. `ssh-keygen -t rsa`
+2. save to `C:\Users\jacubic\.ssh\mtcazurekey`
+3. skipped passphrase
+4. to verify the files `mtcazurekey` and `mtcazurekey.pub` were created, run: `ls -al ~/.ssh`
+
+---
+
 ## ssh into the linux box running in Azure
 
 get the public IP address from the vm

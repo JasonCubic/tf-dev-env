@@ -1,4 +1,4 @@
-add-content -path c:/users/jcubi/.ssh/config -value @'
+add-content -path $HOME/.ssh/config -value @'
 
 Host ${hostname}
   HostName ${hostname}
