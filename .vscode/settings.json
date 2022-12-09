@@ -2,5 +2,8 @@
   "[terraform]": {
     "editor.defaultFormatter": "hashicorp.terraform",
     "editor.formatOnSave": true
-  }
+  },
+  "grammarly.files.exclude": [
+    "**/*.md"
+  ]
 }

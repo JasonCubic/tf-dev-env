@@ -1,3 +1,6 @@
-tenant_id = "<tennant goes here>"
-subscription_id = "<subscription goes here>"
+# https://learn.microsoft.com/en-us/azure/active-directory/develop/howto-create-service-principal-portal
+tenant_id = "" # Directory (tenant) ID
+subscription_id = ""
+client_id = "" # service principal "lz-demo" - Application (client) ID
+client_secret = "" # service principal "lz-demo" secret value
 host_os = "windows"

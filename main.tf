@@ -5,7 +5,7 @@ terraform {
   required_providers {
     azurerm = {
       source  = "hashicorp/azurerm"
-      version = "=3.32.0" # https://github.com/hashicorp/terraform-provider-azurerm
+      version = "=3.34.0" # https://github.com/hashicorp/terraform-provider-azurerm
     }
   }
 }
@@ -13,8 +13,11 @@ terraform {
 # Configure the Microsoft Azure Provider
 # https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs
 provider "azurerm" {
-  tenant_id       = var.tenant_id       # Optional, could get this from the az login info
-  subscription_id = var.subscription_id # Optional, could get this from the az login info
+  use_oidc        = true
+  tenant_id       = var.tenant_id       # Optional, could get this from ARM_TENANT_ID Environment Variable
+  subscription_id = var.subscription_id # Optional, could get this from ARM_SUBSCRIPTION_ID Environment Variable
+  client_id       = var.client_id       # Optional, could get this from ARM_CLIENT_ID Environment Variable
+  client_secret   = var.client_secret   # Optional, could get this from ARM_CLIENT_SECRET Environment Variable
   features {}                           # required
 }
 
